@@ -1,4 +1,3 @@
-import React from 'react';
 import { Route, Routes } from 'react-router-dom';
 import Navbar from './components/Navbar';
 import HomePage from './pages/HomePage';
@@ -12,8 +11,8 @@ function App() {
       <Navbar />
       
         <Routes>
-          <Route path="/" element={HomePage} />
-          <Route path="/CountryDetailsPage" element={CountryDetailsPage} />
+          <Route path="/" element={<HomePage />} />
+          <Route path="/:countryId" element={<CountryDetailsPage />} />
         </Routes>
       
     </div>

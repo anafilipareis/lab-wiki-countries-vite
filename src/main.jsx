@@ -5,10 +5,10 @@ import App from "./App.jsx";
 import "./index.css";
 import "bootstrap/dist/css/bootstrap.css";
 
-ReactDOM.createRoot(document.getElementById("root")).render(
-  <React.StrictMode>
+const root = ReactDOM.createRoot(document.getElementById("root"));
+
+root.render( 
     <Router>
       <App />
-    </Router>
-  </React.StrictMode>
+    </Router> 
 );
